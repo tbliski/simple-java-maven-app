@@ -14,7 +14,7 @@ pipeline
            { 
               steps 
               {
-                sudo sh 'mvn -B -DskipTests clean package' 
+                sh 'mvn -B -DskipTests clean package' 
               }
         }
     }
