@@ -1,4 +1,3 @@
-
 pipeline 
    {
     agent 
@@ -33,12 +32,14 @@ pipeline
                    }
             }
         }
-
-        stage('Deliver') {
-            steps {
+        
+        stage('Deliver') 
+           {
+            steps 
+              {
                 sh './jenkins/scripts/deliver.sh'
-            }
-        }
+              }
+           }
    }
 
 } 
